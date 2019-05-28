@@ -127,6 +127,11 @@ select a.nom from persona p INNER JOIN activitat a on p.id = a.id where p.nom = 
 select * from persona where nom in (select creador from activitat)
 
 select nom from activitats group by categoria having COUNT(categoria) > 5
+########################################################################################################################################
+UPDATE
+########################################################################################################################################
+
+update actvitats set nom ='Visita al Museu Dali, Figueres' where id = '1'
 
 ########################################################################################################################################
 FUNCIONS, PROCEDURES, TRIGGER
