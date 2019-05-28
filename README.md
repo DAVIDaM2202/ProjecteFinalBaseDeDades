@@ -1,6 +1,10 @@
 # ProjecteFinalBaseDeDades
 
 ```sql
+########################################################################################################################################
+CREATE TABLE
+########################################################################################################################################
+
 create table UserDjango (
 id int not null,
 username varchar(100) not null,
@@ -94,7 +98,6 @@ INSERTS
 ########################################################################################################################################
 
 
-
 INSERT INTO `userdjango` (`id`, `username`, `password`) VALUES ('1', 'david', 'david2202'), ('2', 'tomas', 'tomas2202')
 
 INSERT INTO `persona` (`id`, `userdjango`, `nom`, `cognom`, `correu`) VALUES ('1', '1', 'david', 'ayachi', 'david@gmail.com'), ('2', '2', 'tomas', 'puig', 'tomas@gmail.com')
@@ -113,13 +116,11 @@ INSERT INTO `activitat_persones_inscrites` (`id`, `persona`, `activitat`, `asist
 DELETE
 ########################################################################################################################################
 
-
 delete persona where id = 1
 
 ########################################################################################################################################
 SELECTES
 ########################################################################################################################################
-
 
 select a.nom from persona p INNER JOIN activitat a on p.id = a.id where p.nom = 'david'
 
@@ -147,7 +148,6 @@ END;
 select dbo.retornar_nom (1)
 
 
-
 create Procedure dbo.NouUsuari
 @id as int,@nom as varchar(100),@password as varchar(100)
 AS BEGIN 
@@ -157,7 +157,6 @@ INSERT INTO `userdjango` (`id`, `username`, `password`) VALUES (@id, @nom, @pass
 end;
 commit;
 END;
-
 
 
 drop avisar 
