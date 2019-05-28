@@ -1,5 +1,6 @@
 # ProjecteFinalBaseDeDades
 
+```sql
 create table UserDjango (
 id int not null,
 username varchar(100) not null,
@@ -151,3 +152,4 @@ AFTER INSERT, UPDATE
 --AS RAISERROR ('Notify Customer Relations', 16, 10);  
 as print ' Creat correctament
 GO 
+```
